@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminCategoryActivity">
+    <TextView
+        android:id="@+id/tvaddkadai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tambahkan Kedai"
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_marginBottom="20dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvaddkadai"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/k01"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="KOPI HIGH"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/brown"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/k02"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="KOPI MEDIUM"
+            android:textColor="@color/brown"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/k03e"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/brown"
+            android:text="KOPI LOW Budget"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_design2"
+        android:text="Check Reservasi"
+        android:textColor="@color/brown3"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

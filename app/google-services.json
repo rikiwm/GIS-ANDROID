@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182151428270",
+    "project_id": "kopi-a423f",
+    "storage_bucket": "kopi-a423f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182151428270:android:ce10b3eb2e3a1de710d53f",
+        "android_client_info": {
+          "package_name": "com.example.kedaikopi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182151428270-mmjiddkcu6puefb1n0rj31ar3sbrdom4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD-uYIMbS8ejmNNliqRcgaEcS3TT8g1Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182151428270-mmjiddkcu6puefb1n0rj31ar3sbrdom4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

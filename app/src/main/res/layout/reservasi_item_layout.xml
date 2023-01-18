@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="11dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:background="@drawable/input_design">
+
+    </LinearLayout>
+
+          <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center|right"
+                    android:layout_marginEnd="30dp"
+                    >
+          </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:layout_marginEnd="9dp"
+                android:text="KEDAI  : "
+                android:id="@+id/tvkedai"/>
+
+            <TextView
+                android:id="@+id/reservasi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kedai Name"
+                android:textColor="@color/brown"
+                android:layout_toEndOf="@id/tvkedai"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brown"
+                    android:text="Menu yg Di Pilih  : "
+                    android:id="@+id/tvmpilih"/>
+
+                <TextView
+                    android:id="@+id/reservasi_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvmpilih"
+                    android:text=" Menu"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:text="JUMLAH  : "
+                android:id="@+id/tvjumlah"/>
+
+                <TextView
+                    android:id="@+id/reservasi_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvjumlah"
+                    android:text=" Quantitiy"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold"
+                    />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tvharga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="11dp"
+                    android:text="HARGA  : "
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:id="@+id/reservasi_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvharga"
+                    android:text="Price"
+                    android:textColor="@color/brown"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvreservasi_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/reservasi_price"
+                    android:text="( Include Segelas Kopi )"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/brown"
+                    android:textSize="8sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchKedaiActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gradient"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <EditText
+
+            android:id="@+id/search_product_name"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Cari Kedai .."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:textColorHint="@color/brown2"
+            android:textColor="@android:color/black"
+
+            />
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Search"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/buttons"
+            android:padding="1dp"
+            android:layout_toRightOf="@+id/search_product_name"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/r5">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

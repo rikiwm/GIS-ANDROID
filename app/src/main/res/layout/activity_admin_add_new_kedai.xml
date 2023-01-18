@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminAddNewKedaiActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_design">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input data Kedai"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/brown3"
+        android:id="@+id/tvdatakedai"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvdatakedai"
+        />
+
+
+    <EditText
+        android:id="@+id/kopi_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/select_product_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design2"
+        android:hint="Nama Kedai"
+        android:textColorHint="@color/brown3"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/kopi_description"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/kopi_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Description"
+        android:textColorHint="@color/brown3"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design2"
+        />
+
+
+    <EditText
+        android:id="@+id/kopi_price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/kopi_description"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Price / Cup "
+        android:textColorHint="@color/brown3"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design2"
+        />
+    <EditText
+        android:id="@+id/alamatkadai"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/kopi_price"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Address"
+        android:textColorHint="@color/brown3"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design2"
+        />
+    <EditText
+        android:id="@+id/hp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/alamatkadai"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="No.Handphone"
+        android:textColorHint="@color/brown3"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design2"
+        />
+
+
+    <Button
+        android:id="@+id/add_new_kadai"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hp"
+        android:text="Tambahkan"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="132dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

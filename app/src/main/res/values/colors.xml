@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#000000</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorSecondary">#FF03DAC5</color>
+    <color name="colorSecondaryVariant">#FF018786</color>
+    <color name="colorOnSecondary">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown2">#DF5D4037</color>
+    <color name="brown">#5D4037</color>
+    <color name="brown1">#3E2723</color>
+    <color name="brown3">#795548</color>
+</resources>
